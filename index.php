@@ -7,7 +7,6 @@ switch (ENVIRONMENT) {
         error_reporting(-1);
         ini_set('display_errors', 1);
         break;
-
     case 'testing':
     case 'production':
         ini_set('display_errors', 0);
@@ -28,16 +27,15 @@ $system_path = 'system';
 //应用文件夹
 $application_folder = 'application';
 
-
 if (($_temp = realpath($system_path)) !== FALSE) {
     $system_path = $_temp . DIRECTORY_SEPARATOR;
 }
-
+// $system_path='D:\liufa\SimpleCate\system'.DIRECTORY_SEPARATOR;
 // 检查文件是否存在
 if (!is_dir($system_path)) {
     header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
     echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: ' . pathinfo(__FILE__, PATHINFO_BASENAME);
-    exit(3); // EXIT_CONFIG
+    exit(3); 
 }
 
 // 定义框架文件系统路径
@@ -61,9 +59,9 @@ if (is_dir($application_folder)) {
     echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: ' . SELF;
     exit(3); // EXIT_CONFIG
 }
-
+//$application_folder='D:\liufa\SimpleCate\application';
 define('APPPATH', $application_folder . DIRECTORY_SEPARATOR);
 
 
 //加载核心文件
-require_once BASEPATH . 'core/ddyweb.php';
+require_once BASEPATH . 'core/Core.php';

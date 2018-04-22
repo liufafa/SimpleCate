@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <coverage xmlns="http://www.netbeans.org/ns/code-coverage/1" enabled="true"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/liufa/SimpleCate/test/bootstrap.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Url.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Common.php</file>
+            <file>file:/D:/liufa/SimpleCate/application/controllers/Home.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Loader.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Controller.php</file>
+            <file>file:/D:/liufa/SimpleCate/application/models/TestModel.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Core.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Model.php</file>
+            <file>file:/D:/liufa/SimpleCate/system/core/Router.php</file>
+            <file>file:/D:/liufa/SimpleCate/application/controllers/Test/Test.php</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,7 +1,14 @@
 <?php
+// Errors on full!
+ini_set('display_errors', 1);
+error_reporting(E_ALL | E_STRICT);
+$dir = realpath(dirname(__FILE__));
+// Path constants
+defined('PROJECT_BASE') OR define('PROJECT_BASE', realpath($dir.'/../').DIRECTORY_SEPARATOR);
+defined('SYSTEM_PATH') OR define('SYSTEM_PATH', PROJECT_BASE.'system'.DIRECTORY_SEPARATOR);
 
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+define('BASEPATH', PROJECT_BASE.'system'.DIRECTORY_SEPARATOR);
+define('APPPATH', PROJECT_BASE.'application'.DIRECTORY_SEPARATOR);
 //引入一个公共方法
 require_once(BASEPATH . 'core/Common.php');
 //加载url方法
@@ -32,6 +39,5 @@ if (empty($class) OR ! file_exists(APPPATH . 'controllers/' . $Router->directory
     require_once(APPPATH . 'controllers/' . $Router->directory . $class . '.php');
 
     $class = new $class;
-
-    call_user_func_array(array($class, $Router->method), array());
 }
+
