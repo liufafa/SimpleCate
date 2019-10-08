@@ -1,0 +1,29 @@
+{
+  "name": "archfafa/fafa-page",
+  "description": "fafa php base class library.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fafa Arch Group",
+      "email": "arch@fafacom"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+  },
+  "repositories": {
+    "0": {
+      "type": "composer",
+      "url": "http://composer.17gwx.com"
+    }
+  }
+}
